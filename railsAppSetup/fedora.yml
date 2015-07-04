@@ -1,0 +1,14 @@
+development:
+  user: fedoraAdmin
+  password: DevelopmentF3d0ra!
+  url: http://157.182.150.61:8080/fedora
+test: &TEST  
+  user: fedoraAdmin
+  password: TestingF3d0ra!
+  url: http://157.182.150.60:8080/fedora
+production:
+  user: fedoraAdmin
+  password: <%= ENV["FEDORA_PASSWORD"] %>
+  url: <%= ENV["FEDORA_SERVER"] %>/fedora
+cucumber:
+  <<: *TEST

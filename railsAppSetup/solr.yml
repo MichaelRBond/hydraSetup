@@ -1,0 +1,10 @@
+# This is a sample config file that does not have multiple solr instances. You will also need to be sure to
+# edit the fedora.yml file to match the solr URL for active-fedora. 
+development:
+  url: http://157.182.150.59:8080/development
+test: &TEST
+  url: http://157.182.150.62:8080/testing
+cucumber:
+  <<: *TEST
+production:
+  url: <%= ENV["SOLR_SERVER"] %>/core0 
