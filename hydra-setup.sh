@@ -7,9 +7,6 @@ GITDIR="/tmp/git"
 GIT_REPO="hydraSetup"
 REPO_DIR="$GITDIR/$GIT_REPO"
 
-cd $GITDIR
-sudo git clone https://MichaelRBond@github.com/MichaelRBond/$GIT_REPO.git
-
 cd $BASE_DIR
 rails new $PROJECT_NAME
 
