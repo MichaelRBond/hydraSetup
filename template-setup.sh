@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Setting up Template"
+
 # @TODO : these should be put in a separate file and sourced from hydra/template-setup.sh
 
 PROJECT_NAME="holt"
