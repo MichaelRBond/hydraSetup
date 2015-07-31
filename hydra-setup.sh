@@ -49,5 +49,6 @@ mkdir ./app/views/pages
 
 cp $REPO_DIR/app/views/imageviewers/*.erb ./app/views/imageviewers
 echo "Don't forget to modify imageviewers with model information"
+echo "Don't forget to change App name in blacklight_helper.rb"
 
 cp $REPO_DIR/app/models/newmodel.rb ./app/models/newmodel.rb
