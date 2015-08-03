@@ -3,3 +3,17 @@
 @import 'bootstrap';
 
 @import 'blacklight/blacklight'; 
+
+@import 'variables';
+
+.container {
+    width: 90%;
+    .row {
+    	#content {
+	    	p {
+	    		line-height: 150%;
+	    		color: $neutral-wgray1;
+	    	}
+    	}
+    }
+}
