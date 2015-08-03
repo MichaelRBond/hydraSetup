@@ -34,7 +34,8 @@
         <%= content_for(:head) %>
     </head>
     <body class="<%= render_body_class %>">
-
+        <a name="top"></a>
+        
         <!-- WVU Header -->
         <div class="wvu-header mobile wvubottom">
             <a href="#" id="wvutoggle" class="wvu-masthead__logo wvu-masthead__logo--w-signature">
@@ -125,7 +126,7 @@
                     </ul>
                 </div>
                 <div class="sticky-header-top tabBar">
-                    <a href="#">
+                    <a href="#top">
                         <%= image_tag("top.svg", alt: "Back to Top") %>
                     </a>
                 </div>
