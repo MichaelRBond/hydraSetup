@@ -17,3 +17,54 @@
     	}
     }
 }
+
+/* Documents */
+#documents .document {
+    margin: 0 0 40px 0;
+    border: none;
+    width: 100%;
+    float: left;
+    .index-document-functions {
+        width: 100%;
+        float: left;
+    }
+    .documentHeader {
+        margin: 0;
+        h5 {
+            width: 100%;
+            text-align: left;
+            font-size: 1.25em;
+            font-weight: 300;
+        }
+        .index-document-functions {
+            .bookmark_toggle {
+                .toggle_bookmark {
+                    padding: 0;
+                    label {
+                        floaT: LEFT;
+                    }
+                }
+            }
+        }
+    }
+    .document-metadata {
+        margin: 0;
+        dd {
+            text-align: left;
+        }
+        dt {
+            text-align: left;
+            padding-left: 20px;
+        }        
+    }
+}
+
+/*********************************************************************
+    1024px and up
+**********************************************************************/
+
+@media screen and (min-width: 1024px) {
+    #documents .document {
+    width: 50%;
+    }
+}
