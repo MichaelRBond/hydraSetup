@@ -2,13 +2,15 @@
 
 @import 'bootstrap';
 
-@import 'blacklight/blacklight'; 
+@import 'blacklight/blacklight';
 
 @import 'variables';
 
 .container {
     width: 90%;
     .row {
+        margin-left: 0;
+    	margin-right: 0;
     	#content {
 	    	p {
 	    		line-height: 150%;
@@ -17,46 +19,68 @@
     	}
     }
 }
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: $hospital;
+    border-color: $hospital;
+}
+#appliedParams {
+	background-color: $hospital;
+}
+.text-success, .facet-values li .selected {
+    color: $accent-orange3;
+}
 
 /* Documents */
-#documents .document {
-    margin: 0 0 40px 0;
-    border: none;
-    width: 100%;
-    float: left;
-    .index-document-functions {
+#documents {
+    .document {
+        margin: 0 0 20px 0;
+        border: none;
         width: 100%;
         float: left;
-    }
-    .documentHeader {
-        margin: 0;
-        h5 {
+        border-bottom: 1px solid #DDD;
+        padding-bottom: 20px;
+        .awrap {
             width: 100%;
-            text-align: left;
-            font-size: 1.25em;
-            font-weight: 300;
+            z-index: 2;
+            position: relative;
+            top: 0;
+            left: 0;
         }
         .index-document-functions {
-            .bookmark_toggle {
-                .toggle_bookmark {
-                    padding: 0;
-                    label {
-                        floaT: LEFT;
+            width: 100%;
+            float: left;
+        }
+        .documentHeader {
+            margin: 0;
+            h5 {
+                width: 100%;
+                text-align: left;
+                font-size: 1.25em;
+                font-weight: 300;
+            }
+            .index-document-functions {
+                .bookmark_toggle {
+                    .toggle_bookmark {
+                        padding: 0;
+                        label {
+                            floaT: LEFT;
+                        }
                     }
                 }
             }
         }
-    }
-    .document-metadata {
-        margin: 0;
-        dd {
-            text-align: left;
+        .document-metadata {
+            margin: 0;
+            dd, dt {
+                text-align: left;
+                padding-left: 20px;
+            }        
         }
-        dt {
-            text-align: left;
-            padding-left: 20px;
-        }        
     }
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, #search-navbar .search-query-form, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: inherit;
 }
 
 /*********************************************************************
