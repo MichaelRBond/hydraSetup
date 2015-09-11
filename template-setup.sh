@@ -27,6 +27,8 @@ cp $REPO_DIR/templates/basic-2015/wvu.css.scss $PROJECT_DIR/app/assets/styleshee
 
 cp $REPO_DIR/templates/basic-2015/images/* $PROJECT_DIR/app/assets/images/
 
+cp $PROJECT_DIR/app/views/layouts/application.html.erb $PROJECT_DIR/app/views/layouts/$PROJECT_NAME.html.erb
+
 mkdir -p $PROJECT_DIR/app/views/catalog
 touch $PROJECT_DIR/app/views/catalog/_home_text.html.erb
 echo "<h2>About the Collection</h2>" > $PROJECT_DIR/app/views/catalog/_home_text.html.erb
