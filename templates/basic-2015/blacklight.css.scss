@@ -21,11 +21,11 @@
 }
 .panel-default > .panel-heading {
     color: #333;
-    background-color: $hospital;
-    border-color: $hospital;
+    background-color: $tabbargray;
+    border-color: $tabbargray;
 }
 #appliedParams {
-	background-color: $hospital;
+	background-color: $tabbargray;
 }
 .text-success, .facet-values li .selected {
     color: $accent-orange3;
