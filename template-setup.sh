@@ -6,6 +6,8 @@ echo "Setting up Template"
 
 ## Uncomment project name line to use it locally. Better put in global for setup (from bootstrap.sh)
 #PROJECT_NAME="holt"
+source /etc/environment
+
 BASE_DIR="/vagrant"
 PROJECT_DIR="$BASE_DIR/$PROJECT_NAME"
 GITDIR="/tmp/git"

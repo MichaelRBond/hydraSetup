@@ -1,6 +1,8 @@
 #!/bin/bash
 
-PROJECT_NAME="holt"
+#PROJECT_NAME="holt"
+source /etc/environment
+
 BASE_DIR="/vagrant"
 PROJECT_DIR="$BASE_DIR/$PROJECT_NAME"
 GITDIR="/tmp/git"
