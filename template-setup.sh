@@ -4,7 +4,8 @@ echo "Setting up Template"
 
 # @TODO : these should be put in a separate file and sourced from hydra/template-setup.sh
 
-PROJECT_NAME="holt"
+## Uncomment project name line to use it locally. Better put in global for setup (from bootstrap.sh)
+#PROJECT_NAME="holt"
 BASE_DIR="/vagrant"
 PROJECT_DIR="$BASE_DIR/$PROJECT_NAME"
 GITDIR="/tmp/git"
