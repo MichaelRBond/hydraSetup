@@ -21,7 +21,7 @@ sed -i "s@layout 'blacklight'@layout '$PROJECT_NAME'@" $PROJECT_DIR/app/controll
 sed -i "s@//= require turbolinks@@g" $PROJECT_DIR/app/assets/javascripts/application.js
 
 # copy files
-cp $REPO_DIR/templates/basic-2015/collectiontitle.html $PROJECT_DIR/app/views/layout/$PROJECT_NAME.html.erb
+cp $REPO_DIR/templates/basic-2015/collectiontitle.html $PROJECT_DIR/app/views/layouts/$PROJECT_NAME.html.erb
 cp $REPO_DIR/templates/basic-2015/collectiontitle.js $PROJECT_DIR/app/assets/javascripts/$PROJECT_NAME.js
 cp $REPO_DIR/templates/basic-2015/collectiontitle.css.scss $PROJECT_DIR/app/assets/stylesheets/$PROJECT_NAME.css.scss
 cp $REPO_DIR/templates/basic-2015/variables.css.scss $PROJECT_DIR/app/assets/stylesheets/variables.css.scss
