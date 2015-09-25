@@ -23,6 +23,7 @@ html, body, form, nav, ul, div {
 		a {
 			color: #fff;
 			text-shadow: 1px 4px 10px rgba(0,0,0,0.5);
+			font-weight: 600;
 		}
 	}
 	.navbar-right {
@@ -245,8 +246,57 @@ html, body, form, nav, ul, div {
 .destroy {
 	display: none; /* Only used for mobile/n on-accessibility issues */
 }
-#main-container .row #sidebar {
-	display: none;
+#main-container {
+	.row {
+		#sidebar {
+			display: none;
+		}
+		#content {
+			.wrap {
+				text-align: left;
+				p {
+					line-height: 150%;
+					font-size: 1em;
+					a {
+						text-decoration: none;
+						border-bottom: 1px solid #337AB7;
+						&:hover {
+							border-bottom: 1px solid #23527C;
+						}
+					}
+				}
+			}
+			.shareThis {
+				display: block;
+				float: left;
+				width: 100%;
+			}
+	        div[id*='doc_wvulibraries'] {
+	        	padding-bottom: 40px;
+	        	.document-image {
+	        		width: 100%;
+	        		margin-right: 0;
+	        		margin-bottom: 40px;
+	        		float: left;
+	        		img {
+	        			width: 100%;
+	        			height: auto;
+	        		}
+	        	}
+	        	.document-image:nth-child(2) {
+	        		margin-right: 0;
+	        	}
+	            h1 {
+	                text-align: left;
+	            }
+	            .dl-horizontal {
+	            	dt, dd {
+	            		text-align: left;
+	            	}
+	            }
+	        }
+		}
+	}
 }
 
 
@@ -254,8 +304,30 @@ html, body, form, nav, ul, div {
 	768px to 1024px
 **********************************************************************/
 @media screen and (min-width: 768px) {
-	#main-container .row #sidebar {
-		display: block;
+	#main-container {
+		.row {
+			#sidebar {
+				display: block;
+			}
+			#content {
+				.wrap {
+				}
+				.shareThis {
+					display: inline-block;
+					float: left;
+					width: auto;
+				}
+		        div[id*='doc_wvulibraries'] {
+		        	.document-image {
+		        		width: 49%;
+		        		margin-right: 2%;
+		        	}
+		        	.document-image:nth-child(2) {
+		        		margin-right: 0;
+		        	}
+	        	}
+			}
+		}
 	}
 	.tabbarBlue {
 		background: none;
