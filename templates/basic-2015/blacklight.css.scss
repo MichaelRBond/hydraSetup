@@ -7,26 +7,35 @@
 @import 'variables';
 
 .container {
-    width: 90%;
+    width: 100%;
     margin: 40px auto;
     .row {
         margin-left: 0;
-    	margin-right: 0;
-    	#content {
-	    	p {
-	    		line-height: 150%;
-	    		color: $neutral-wgray1;
-	    	}
-    	}
+        margin-right: 0;
+        #content {
+            p {
+                line-height: 150%;
+                color: $neutral-wgray1;
+            }
+            h2 {
+                color: #005DAA;
+                font-weight: 600;
+                font-size: 2em;
+            }
+            h3 {
+                font-size: 1.5em;
+                font-weight: 600;
+            }
+        }
     }
 }
 .panel-default > .panel-heading {
     color: #333;
-    background-color: $tabbargray;
-    border-color: $tabbargray;
+    background-color: $gray;
+    border-color: darken($gray, 10%);
 }
 #appliedParams {
-	background-color: $tabbargray;
+    background-color: $gray;
 }
 .text-success, .facet-values li .selected {
     color: $accent-orange3;
@@ -85,9 +94,20 @@
 }
 
 /*********************************************************************
+    768px and up
+**********************************************************************/
+@media screen and (min-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    #documents .document {
+        width: 50%;
+    }
+}
+
+/*********************************************************************
     1024px and up
 **********************************************************************/
-
 @media screen and (min-width: 1024px) {
     #documents .document {
     width: 50%;

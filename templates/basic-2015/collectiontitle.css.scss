@@ -40,6 +40,13 @@ html, body, form, nav, ul, div {
 }
 #content, #documents {
 	text-align: left;
+	.document-image {
+		img {
+			width: 100%;
+			height: auto;
+			max-width: 1000px;
+		}
+	}
 }
 .sticky-header {
 	background: #edecec;
