@@ -54,3 +54,11 @@ echo "Don't forget to modify imageviewers with model information"
 echo "Don't forget to change App name in blacklight_helper.rb"
 
 cp $REPO_DIR/app/models/newmodel.rb ./app/models/newmodel.rb
+
+echo "Copying over Template"
+
+cp -f $REPO_DIR/templates/basic-2015/images/* ./app/assets/images
+cp -f $REPO_DIR/templates/basic-2015/*.scss ./app/assets/stylesheets
+cp -f $REPO_DIR/templates/basic-2015/*.js ./app/assets/javascripts
+
+cp -f $REPO_DIR/templates/basic-2015/collectiontitle.html ./app/views/layouts/$PROJECT_NAME
