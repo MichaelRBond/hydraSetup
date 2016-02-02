@@ -42,6 +42,14 @@
 }
 #appliedParams {
     background-color: $gray;
+    .appliedFilter {
+        .constraint-value {
+            padding: 15px;
+        }
+        .remove {
+            padding: 15px;
+        }
+    }
 }
 .text-success, .facet-values li .selected {
     color: $accent-orange3;
@@ -116,6 +124,16 @@
 **********************************************************************/
 @media screen and (min-width: 1024px) {
     #documents .document {
-    width: 50%;
+        width: 50%;
     }
+    #appliedParams {
+        .appliedFilter {
+            .constraint-value {
+                padding: 7px;
+            }
+            .remove {
+                padding: 7px;
+            }
+        }
+    }    
 }
