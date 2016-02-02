@@ -18,6 +18,11 @@
     .row {
         margin-left: 0;
         margin-right: 0;
+        #sortAndPerPage {
+            .pull-right {
+                float: initial !important;
+            }
+        }        
         #content {
             p {
                 line-height: 150%;
@@ -136,4 +141,14 @@
             }
         }
     }    
+    .container {
+        width: 90%;
+        .row {
+            #sortAndPerPage {
+                .pull-right {
+                    float: right !important;
+                }
+            }
+        }
+    }
 }
