@@ -30,6 +30,29 @@ html, body, form, nav, ul, div {
 		margin-right: 0;
 		float: left;
 		width: 100%;
+		.navbar-nav {
+			&:nth-child(1) {
+				width: 75%;
+				margin: 0;
+				float: left;
+				li {
+					padding: 0;
+					margin: 0;
+					float: left;
+					&:nth-child(1) {
+						width: 67%;
+					}
+					&:nth-child(2) {
+						width: 33%;	
+					}
+				}
+			}	
+			&:nth-child(2) {
+				width: 25%;
+				margin: 0;
+				float: left;
+			}	
+		}
 		a {
 			color: #fff;
 			&:hover {
@@ -181,6 +204,7 @@ html, body, form, nav, ul, div {
 		width: auto;
 		height: 100%;
 		max-width: 320px;
+		cursor: pointer;
 	}
 	.tabBar {
 		width: 25%;
@@ -356,6 +380,28 @@ html, body, form, nav, ul, div {
 			float: right;
 			width: auto;
 			padding-top: 60px;
+			.navbar-nav {
+				&:nth-child(1) {
+					width: auto;
+					float: inherit;
+					li {
+						padding: 0;
+						margin: 0;
+						float: inherit;
+						&:nth-child(1) {
+							width: auto;
+						}
+						&:nth-child(2) {
+							width: auto;	
+						}
+					}
+				}	
+				&:nth-child(2) {
+					width: 25%;
+					margin: 0;
+					float: left;
+				}	
+			}
 		}
 	}
 	.sticky-header {
