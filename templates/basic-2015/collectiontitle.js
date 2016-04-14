@@ -2,13 +2,13 @@ var facetfun = "";
 
 // If JavaScript Enabled - Setup
 $(document).ready(function() {
-  $(".wvu-header .list").addClass("destroy"); 
-  $(".wvrhc-header .list2").addClass("destroy");   
-  $("#wvrhctoggle .fa-chevron-up").addClass("hiding"); 
-  $("#wvutoggle .fa-chevron-up").addClass("hiding"); 
+  $(".wvu-header .list").addClass("destroy");
+  $(".wvrhc-header .list2").addClass("destroy");
+  $("#wvrhctoggle .fa-chevron-up").addClass("hiding");
+  $("#wvutoggle .fa-chevron-up").addClass("hiding");
   $("#menu-toggle #menu-toggle2").addClass("hiding");
   $("#search-toggle #search-toggle2").addClass("hiding");
-  $("#facet-toggle #filter-toggle2").addClass("hiding");  
+  $("#facet-toggle #filter-toggle2").addClass("hiding");
 
    facetfun = $('#sidebar').html();
 });
@@ -21,9 +21,9 @@ $(window).bind("load resize", function() {
 	if( $(window).width() < 768) {
   		$('.sticky-header-filter-sidebar').html(facetfun);
 	}
-  	else { 
+  	else {
   		$('#sidebar').html(facetfun);
-	} 
+	}
 	$(".sticky-header-filter-sidebar #facets #facet-panel-collapse").removeClass("collapse");
 });
 
@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 	var fheight = windowh - tabbar;
 
-    $('.sticky-header-filter-sidebar').css('max-height', fheight);   
+    $('.sticky-header-filter-sidebar').css('max-height', fheight);
 
 });
 
@@ -48,13 +48,13 @@ $(window).resize(function(){
 
 	var fheight = windowh - tabbar;
 
-    $('.sticky-header-filter-sidebar').css('max-height', fheight);   
+    $('.sticky-header-filter-sidebar').css('max-height', fheight);
 
 });
 
 // Mobile WVU Nav
 $(function () {
-	$("#wvutoggle").click(function () {		
+	$("#wvutoggle").click(function () {
 		$(".list").slideToggle("fast");
 		$("#wvutoggle .fa-chevron-up").toggleClass("hiding");
 		$("#wvutoggle .fa-chevron-down").toggleClass("hiding");
@@ -63,7 +63,7 @@ $(function () {
 
 // Mobile WVRHC Nav
 $(function () {
-	$("#wvrhctoggle").click(function () {		
+	$("#wvrhctoggle").click(function () {
 		$(".list2").slideToggle("fast");
 		$("#wvrhctoggle .fa-chevron-up").toggleClass("hiding");
 		$("#wvrhctoggle .fa-chevron-down").toggleClass("hiding");
@@ -72,7 +72,7 @@ $(function () {
 
 // Tab Bar Navigation: Menu
 $(function () {
-	$("#menu-toggle").click(function () {		
+	$("#menu-toggle").click(function () {
 		$("#sticky-header-nav-menu").toggleClass("tabbarToggle");
 		$(".sticky-header-nav").toggleClass("tabbarBlue");
 		$("#menu-toggle #menu-toggle1").toggleClass("hiding");
@@ -82,18 +82,18 @@ $(function () {
 		$(".search-query-form").removeClass("tabbarToggleSearch");
 		$(".sticky-header-search").removeClass("tabbarBlue");
 		$("#search-toggle #search-toggle1").removeClass("hiding");
-		$("#search-toggle #search-toggle2").addClass("hiding");	
+		$("#search-toggle #search-toggle2").addClass("hiding");
 
 		$(".sticky-header-filter-sidebar").removeClass("tabbarToggle2");
 		$(".sticky-header-filter").removeClass("tabbarBlue");
 		$("#facet-toggle #filter-toggle1").removeClass("hiding");
-		$("#facet-toggle #filter-toggle2").addClass("hiding");	
+		$("#facet-toggle #filter-toggle2").addClass("hiding");
 	});
 });
 
 // Tab Bar Navigation: Search
 $(function () {
-	$("#search-toggle").click(function () {		
+	$("#search-toggle").click(function () {
 		$(".search-query-form").toggleClass("tabbarToggle");
 		$(".search-query-form").toggleClass("tabbarToggleSearch");
 		$(".sticky-header-search").toggleClass("tabbarBlue");
@@ -108,13 +108,13 @@ $(function () {
 		$(".sticky-header-filter-sidebar").removeClass("tabbarToggle2");
 		$(".sticky-header-filter").removeClass("tabbarBlue");
 		$("#facet-toggle #filter-toggle1").removeClass("hiding");
-		$("#facet-toggle #filter-toggle2").addClass("hiding");		
+		$("#facet-toggle #filter-toggle2").addClass("hiding");
 	});
 });
 
 // Tab Bar Navigation: Filter
 $(function () {
-	$("#facet-toggle").click(function () {		
+	$("#facet-toggle").click(function () {
 		$(".sticky-header-filter-sidebar").toggleClass("tabbarToggle2");
 		$(".sticky-header-filter-sidebar").toggleClass("tabbarToggleSearch");
 		$(".sticky-header-filter").toggleClass("tabbarBlue");
@@ -130,13 +130,13 @@ $(function () {
 		$(".search-query-form").removeClass("tabbarToggleSearch");
 		$(".sticky-header-search").removeClass("tabbarBlue");
 		$("#search-toggle #search-toggle1").removeClass("hiding");
-		$("#search-toggle #search-toggle2").addClass("hiding");			
+		$("#search-toggle #search-toggle2").addClass("hiding");
 	});
 });
 
 // Smooth Scrolling for Anchors
 $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
+  $('a[href*=\\#]:not([href=\\#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -150,7 +150,7 @@ $(function() {
   });
 });
 
-// Document Column Resizing 
+// Document Column Resizing
 equalheight = function(container){
 
 	var currentTallest = 0,
@@ -166,7 +166,7 @@ equalheight = function(container){
 		topPostion = $el.position().top;
 
 		if (currentRowStart != topPostion) {
-	
+
 			for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
 				rowDivs[currentDiv].height(currentTallest);
 			}
@@ -175,7 +175,7 @@ equalheight = function(container){
 			currentRowStart = topPostion;
 			currentTallest  = $el.height();
     		rowDivs.push($el);
-    	} 
+    	}
     	else {
     		rowDivs.push($el);
     		currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
@@ -188,35 +188,33 @@ equalheight = function(container){
 }
 
 $(document).ready(function() {
-  equalheight('.document');
+  	equalheight('.document');
+ 	equalheight('.form-section');
 });
 
-$(window).load(function() {
-  equalheight('.document');
-});
-
-$(window).resize(function(){
-  equalheight('.document');
+$(window).bind("load resize", function(){
+	equalheight('.document');
+	equalheight('.form-section');
 });
 
 // Homepage Help Modal Cookie
 $(function () {
-  // set the cookie 
-  var myCookie = "ModalShown"; 
-  var cookieValue = getCookieValue(myCookie); 
+  // set the cookie
+  var myCookie = "ModalShown";
+  var cookieValue = getCookieValue(myCookie);
   console.log(myCookie.length);
-  
+
   if(cookieValue.length === 0){
-    // $('#openModal').modal('show'); 
-  } else { 
+    // $('#openModal').modal('show');
+  } else {
     $('#openModal').toggleClass("destroy");
   }
-  
-    $("#openModalbut").click(function () {            
+
+    $("#openModalbut").click(function () {
       $("#openModal").toggleClass("destroy");
       document.cookie = "ModalShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
     });
- 
+
 });
 function getCookieValue(a, b) {
     b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
