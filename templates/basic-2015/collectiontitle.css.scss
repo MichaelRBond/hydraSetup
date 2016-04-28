@@ -1,5 +1,115 @@
 @import 'variables';
  
+ /*************************************************
+ Tools - Mixins 
+ *************************************************/
+@mixin mq($dim) {
+	@if $dim == hdtv {
+		@media (min-width: 1366px)  { @content; }
+	}
+	@else if $dim == desktop {
+		@media (min-width: 1024px) { @content; }
+	}
+	@else if $dim == tablet {
+		@media (min-width: 768px)  { @content; }
+	}
+}
+
+@mixin vp($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  -kthtml-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
+ /*************************************************
+Main
+ *************************************************/
+ .pagination {
+ 	width: 100%;
+ }
+#document {
+ 	.dl-horizontal  {
+ 		dt {
+ 			font-weight: bold;
+ 			color: #000;
+ 		}
+ 	}
+ }
+ #documents {
+ 	.document {
+ 		width: 100%;
+ 		margin-right: 0;
+ 		border: none;
+ 		@include mq(desktop) {
+			width: 48%;
+ 			margin-right: 4%;
+		}
+	    a {
+	    	display: block;
+	    	width: 100%;
+	        img {
+	            width: 100%;
+	            height: auto;
+	        }
+	    }
+	    .documentHeader {
+	    	width: 100%;
+	    	h5 {
+				display: inline;
+				float: left;
+				text-align: left;
+				width: auto;
+				margin: 20px 0 0 0;
+				padding: 0;
+				font-size: 1.5em;
+				.document-counter {
+					color: #000;
+				}
+				a {
+					display: inline;
+					text-align: left;
+					width: auto;
+				}
+	    	}
+	    	.index-document-functions {
+	    		padding: 0;
+	    		margin: 20px 0 15px 0;
+	    	}
+	    }
+	    .document-metadata {
+	    	width: 100%;
+	    	dt {
+	    		width: 100%;
+	    		padding: 0 !important;
+	    		margin: 0 0 0 0;
+	    		float: left;
+	    		font-weight: bold;
+	    		color: #000;
+	    		@include mq(tablet) {
+	    			width: 33%;
+	    			margin: 0 0 20px 0;
+				}
+
+			}
+			dd {
+				width: 100%;
+				padding: 0 !important;
+				margin: 0 0 20px 0;
+				float: left;
+				@include mq(tablet) {
+					width: 67%;
+				}
+			}
+	    }
+    }
+    .document:nth-child(even) {
+ 		margin-right: 0;
+	}
+}
+
 /*********************************************************************
     480px or less
 **********************************************************************/
