@@ -27,7 +27,11 @@
  /*************************************************
 Main
  *************************************************/
+<<<<<<< refs/remotes/origin/master
  .o {
+=======
+.o {
+>>>>>>> Updating Base Template to hide login, and records
 	color: $primary-orange;
 }
 
@@ -83,6 +87,10 @@ body > div.collection-header > div > div > ul:nth-child(2) {
 		}
 	}	
 }
+<<<<<<< refs/remotes/origin/master
+=======
+
+>>>>>>> Updating Base Template to hide login, and records
  .pagination {
  	width: 100%;
  }
@@ -108,6 +116,10 @@ body > div.collection-header > div > div > ul:nth-child(2) {
 	    	width: 100%;
 	        img {
 	            width: 100%;
+<<<<<<< refs/remotes/origin/master
+=======
+	            max-width: 100px;
+>>>>>>> Updating Base Template to hide login, and records
 	            height: auto;
 	        }
 	    }
@@ -120,7 +132,11 @@ body > div.collection-header > div > div > ul:nth-child(2) {
 				width: auto;
 				margin: 20px 0 0 0;
 				padding: 0;
+<<<<<<< refs/remotes/origin/master
 				font-size: 1.5em;
+=======
+				font-size: 14px;
+>>>>>>> Updating Base Template to hide login, and records
 				.document-counter {
 					color: #000;
 				}
@@ -146,14 +162,22 @@ body > div.collection-header > div > div > ul:nth-child(2) {
 	    		color: #000;
 	    		@include mq(tablet) {
 	    			width: 33%;
+<<<<<<< refs/remotes/origin/master
 	    			margin: 0 0 20px 0;
+=======
+	    			margin: 0;
+>>>>>>> Updating Base Template to hide login, and records
 				}
 
 			}
 			dd {
 				width: 100%;
 				padding: 0 !important;
+<<<<<<< refs/remotes/origin/master
 				margin: 0 0 20px 0;
+=======
+				margin: 0;
+>>>>>>> Updating Base Template to hide login, and records
 				float: left;
 				@include mq(tablet) {
 					width: 67%;
