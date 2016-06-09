@@ -27,6 +27,62 @@
  /*************************************************
 Main
  *************************************************/
+ .o {
+	color: $primary-orange;
+}
+
+body > div.collection-header > div > div > ul:nth-child(2) {
+    display: none;
+}
+
+#content {
+	.imageWrapR {
+		width: 100%;
+		height: auto;
+		text-align: center;
+		float: right;
+		padding: 0 0 20PX 0;
+		@include mq(tablet) {
+			width: 400px;
+			padding: 0 0 20PX 20PX;
+		}
+		img {
+			width: 100%;
+			max-width: 640px;
+			height: auto;
+			padding-bottom: 20px;
+		}
+		p {
+			font-size: 0.8em;
+			
+			font-style: italic;
+			margin-bottom: 0;
+		}
+	}
+	.imageWrapL {
+		width: 100%;
+		height: auto;
+		text-align: center;
+		float: left;
+		padding: 0 0 20PX 0;
+		@include mq(tablet) {
+			width: 400px;
+			padding: 0 20PX 20PX 0;
+		}
+		img {
+			width: 100%;
+			max-width: 640px;
+			height: auto;
+			padding-bottom: 20px;
+		}
+		p {
+			font-size: 0.8em;
+			
+			font-style: italic;
+			margin-bottom: 0;
+		}
+	}	
+}
  .pagination {
  	width: 100%;
  }
