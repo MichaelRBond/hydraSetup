@@ -29,6 +29,11 @@ rm -f Gemfile.lock
 
 bundle install
 
+# BEGIN TESTING TOO SEE IF CHANGE REMOVES ERROR IN CURRENT SCRIPT # 
+echo " Change ownership so vagrant user can install gems and such"
+sudo chown -R vagrant /usr/local/
+# END TESTING #
+
 echo "Hydra Install"
 pwd
 rails generate hydra:install
