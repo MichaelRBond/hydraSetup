@@ -1,16 +1,17 @@
 #!/bin/bash
 
+## Uncomment project name line to use it locally. Better put in global for setup (from bootstrap.sh)
 #PROJECT_NAME="holt"
 source /etc/environment
 
 BASE_DIR="/vagrant"
-PROJECT_DIR="$BASE_DIR/$PROJECT_NAME"
+PROJECT_DIR="$BASE_DIR/hydra"
 GITDIR="/tmp/git"
 GIT_REPO="hydraSetup"
 REPO_DIR="$GITDIR/$GIT_REPO"
 
 cd $BASE_DIR
-rails new $PROJECT_NAME
+rails new hydra
 
 cd $PROJECT_DIR
 mkdir .bundle

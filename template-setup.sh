@@ -9,7 +9,7 @@ echo "Setting up Template"
 source /etc/environment
 
 BASE_DIR="/vagrant"
-PROJECT_DIR="$BASE_DIR/$PROJECT_NAME"
+PROJECT_DIR="$BASE_DIR/hydra"
 GITDIR="/tmp/git"
 GIT_REPO="hydraSetup"
 REPO_DIR="$GITDIR/$GIT_REPO"
